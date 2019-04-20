@@ -7,7 +7,7 @@ There are examples of how to write the proofs in the 'proof' folder, and example
 I mainly made this tool so that I can submit my homework digitally instead of by handwriting, while still perfectly sticking to the style from the lectures and not shifting it to a style that has a tool for it, but is quite ultimatelly quite different.<br>
 ##Example
 The following is an example (proof2b.proof):<br>
-'''
+```
 1. ∀x[P(x)→(Q(x)∨x=b)] ; Premise ; {1}<br>
 2. { Q(b) ; Hypothesis ; {2}<br>
 3. |{ P(a) ; Hypothesis ; {3}<br>
@@ -24,5 +24,5 @@ The following is an example (proof2b.proof):<br>
 14.| P(a)→Q(a) ; →-introduction3,13 ; {1, 2}<br>
 15.} ∀x[P(x)→Q(x)] ; ∀-introduction14 ; {1, 2}<br>
 16.Q(b)→∀x[P(x)→Q(x)] ; →-introduction2,15 ; {1} <br>
-'''
+```
 ![Example Proof2b](img/proof2b.png?raw=true "Example .png output for a .proof input:")
