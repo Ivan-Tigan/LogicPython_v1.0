@@ -6,7 +6,7 @@ logicBuilder.py is the actual tool that can convert a file from the proof folder
 There are examples of how to write the proofs in the 'proof' folder, and example output files in the 'png', 'pdf', and 'html' folders. <br>
 I mainly made this tool so that I can submit my homework digitally instead of by handwriting, while still perfectly sticking to the style from the lectures and not shifting it to a style that has a tool for it, but is quite ultimatelly quite different.<br>
 
-##Example
+## Example
 
 The following is an example (proof2b.proof):<br>
 ```
