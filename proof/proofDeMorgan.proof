@@ -1,0 +1,10 @@
+1. ¬(A∨B) ; Premise ; {1}
+2. { A ; Hypothesis ; {2}
+3. | A∨B ; ∨-introduction2 ; {2}
+4. } ⊥ ; ∧─introduction1,3 ; {1, 2}
+5. ¬A ; ¬-introduction2,4 ; {1}
+6. { B ; Hypothesis ; {6}
+7. | A∨B ; ∨-introduction6 ; {6}
+8. } ⊥ ; ∧─introduction1,7 ; {1, 6}
+9. ¬B ; ¬-introduction6,8 ; {1}
+10. ¬A∧¬B ; ∧─introduction5,9 ; {1}

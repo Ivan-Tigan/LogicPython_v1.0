@@ -1,0 +1,143 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@media print {
+  @page { margin: 0; }
+  body { margin: 1.6cm; }
+}                    
+@media print {
+  body {-webkit-print-color-adjust: exact;}
+  }
+.logicline {
+  display: flex !important;
+  /* margin-top: -0.5% !important; */
+}
+* {
+  /* font-family: monospace; */
+  font-size: 1.em;
+  letter-spacing: 0px;
+  line-height: 19px;
+  font-stretch: extra-condensed;
+}
+
+.prf table { border-collapse: collapse; border: 2px black; table-layout: fixed;}
+.prf tr { display: block; float: left; padding-right: 10px;}
+.prf th, .prf td { display: block; text-align: left;}
+
+table{
+  border-collapse:collapse;
+  border: 2px black;
+  padding: 0px;
+}
+
+td{
+  padding-right:10px;
+  padding: 0px;
+  margin:0px;
+}
+tr{
+
+  padding: 0px;
+  margin:0px;
+  display: flex;
+}
+
+
+.vl{
+  position: relative;
+  }
+.vl:after {
+  content:"";
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  bottom: 0%;
+  width: 1px;
+  padding:0px;
+  margin:0px;
+
+
+  }
+
+
+.tl{
+  position: relative;
+  }
+   
+.tl:after {
+  content:"";
+  background: black;
+  position: absolute;
+  top: 10%;
+  right: 0px;
+  left: -3px;
+  height: 1px;
+  padding:0px;
+  margin:0px;
+
+
+  }
+  
+  .tvl{
+  position: relative;
+  }
+   
+  .tvl:after {
+  content:"";
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  bottom: 0%;
+  width: 1px;
+  padding:0px;
+  margin:0px;
+
+
+  }
+
+
+
+  .bl{
+    position: relative;
+    }
+     
+  .bl:after {
+    content:"";
+    background: black;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: -0px;
+    left: -3px;
+    height: 1px;
+    padding:0px;
+    margin:0px;
+  
+  
+    }
+  
+.bvl{
+  position: relative;
+  }
+   
+  .bvl:after {
+  content:"";
+  background: black;
+  position: absolute;
+  left: 0;
+  top:  0%;
+  bottom: 10%;
+  width: 1px;
+  padding:0px;
+  margin:0px;
+  }
+</style></head><body><table class="prf"><tr class="prf"><td class="prf">1. </td><td class="prf">2. </td><td class="prf">3. </td><td class="prf">4. </td><td class="prf">5. </td><td class="prf">6. </td><td class="prf">7. </td><td class="prf">8. </td><td class="prf">9. </td><td class="prf">10. </td></tr><tr class="prf"><td class="prf"><table><tr class="logicline"><td>¬(A∨B)</td></tr></table></td><td class="prf"><table><tr class="logicline"><td class="tvl"> </td><td class="tl"> </td><td>A</td></tr></table></td><td class="prf"><table><tr class="logicline"><td class="vl">  </td><td>A∨B</td></tr></table></td><td class="prf"><table><tr class="logicline"><td class="bvl"> </td><td class="bl"> </td><td>⊥</td></tr></table></td><td class="prf"><table><tr class="logicline"><td>¬A</td></tr></table></td><td class="prf"><table><tr class="logicline"><td class="tvl"> </td><td class="tl"> </td><td>B</td></tr></table></td><td class="prf"><table><tr class="logicline"><td class="vl">  </td><td>A∨B</td></tr></table></td><td class="prf"><table><tr class="logicline"><td class="bvl"> </td><td class="bl"> </td><td>⊥</td></tr></table></td><td class="prf"><table><tr class="logicline"><td>¬B</td></tr></table></td><td class="prf"><table><tr class="logicline"><td>¬A∧¬B</td></tr></table></td></tr><tr class="prf"><td class="prf">Premise</td><td class="prf">Hypothesis</td><td class="prf">∨-introduction2</td><td class="prf">∧─introduction1,3</td><td class="prf">¬-introduction2,4</td><td class="prf">Hypothesis</td><td class="prf">∨-introduction6</td><td class="prf">∧─introduction1,7</td><td class="prf">¬-introduction6,8</td><td class="prf">∧─introduction5,9</td></tr><tr class="prf"><td class="prf">{1}
+</td><td class="prf">{2}
+</td><td class="prf">{2}
+</td><td class="prf">{1,2}
+</td><td class="prf">{1}
+</td><td class="prf">{6}
+</td><td class="prf">{6}
+</td><td class="prf">{1,6}
+</td><td class="prf">{1}
+</td><td class="prf">{1}</td></tr></table></body></html>

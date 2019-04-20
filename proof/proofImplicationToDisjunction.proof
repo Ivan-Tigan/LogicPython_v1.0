@@ -1,0 +1,10 @@
+1. A→B ; Premise ; {1}
+2.{¬(¬A∨B) ; Hypothesis ; {2}
+3.|¬¬A∧¬B ; Sequent-intro(DeMorgan)2 ; {2}
+4.|¬¬A ; ∧-elimination3 ; {2}
+5.|A  ; ¬¬-elimination4 ; {2}
+6.|B ; →-elimination1,5 ; {1, 2}
+7.|¬B  ; ∧-elimination3 ; {2}
+8.}⊥ ; ∧-introduction6,7 ; {1, 2}
+9.¬¬(¬A∨B) ; ¬-introduction2,8 ; {1}
+10.¬A∨B ; ¬¬-elimination9 ; {1}

@@ -1,0 +1,9 @@
+1. ¬A∨B ; Premise ; {1}
+2.{¬(A→B) ; Hypothesis ; {2}
+3.|{¬A∨B ; Hypothesis ; {3}
+4.||A→B ; Sequent-intro(ImplToDisj)3 ; {3}
+5.|}⊥ ; ∧-introduction2,4 ; {2, 3}
+6.|¬(¬A∨B) ; ¬-introduction3,5 ; {2}
+7.}⊥ ; ∧-introduction1,6 ; {1, 2}
+8.¬¬(A→B) ; ¬-introduction2,7 ; {1}
+9.A→B ; ¬¬-elimination8 ; {1}

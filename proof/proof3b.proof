@@ -1,0 +1,15 @@
+﻿1. ∀x[J(x)→∃y[O(y)∧s(y,x)]]  ; Premise ; {1}
+2. J(a)→∃y[O(y)∧S(y,a)] ; ∀-elimination1 ; {1}
+3. ¬J(a)∨∃y[O(y)∧S(y,a)] ; Sequent-intro(ImplToDisj)2 ; {1}
+4. {¬J(a) ; Hypothesis ; {4}
+5. |¬J(a)∨(O(b)∧S(b,a)) ; ∨-introduction4 ; {4}
+6. |J(a)→(O(b)∨S(b,a)) ; Sequent-intro(DisjToImpl)5 ; {4}
+7. }∃y[J(a)→(O(y)∨S(y,a))] ; ∃-introduction6 ; {4}
+8. {∃y[O(y)∧S(y,a)] ; Hypothesis ; {8}
+9. |{O(b)∧S(y,a) ; Hypothesis ; {9}
+10.||¬J(a)∨(O(b)∧S(b,a)) ; ∨-introduction9 ; {9}
+11.||J(a)→(O(y)S(b,a)) ; Sequent-intro(DisjToImpl)10 ; {9}
+12.|}∃y[J(a)→(O(y)∨S(y,a))] ; ∃-introduction11 ; {9}
+13.}∃y[J(a)→(O(y)∨S(y,a))] ; ∃-elimination8,9,12 ; {8}
+14.∃y[J(a)→(O(y)∨S(y,a))] ; ∨-elimination3,4,7,8,13 ; {1}
+15.∀x[∃y[J(x)→(O(y)∧S(y,x))]] ; ∀-introduction14 ; {1} 
